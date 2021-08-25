@@ -1,0 +1,437 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai_lovePets_webApi</name>
+    </assembly>
+    <members>
+        <member name="M:senai_lovePets_webApi.Controllers.AtendimentosController.ListarTodos">
+            <summary>
+            Lista todos os atendimentos
+            </summary>
+            <returns>Uma lista de atendimentos e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.AtendimentosController.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um atendimento através do seu ID
+            </summary>
+            <param name="idAtendimento">ID do atendimento que será buscado</param>
+            <returns>Um atendimento encontrado e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.AtendimentosController.Cadastrar(senai_lovePets_webApi.Domains.Atendimento)">
+            <summary>
+            Cadastra um novo atendimento
+            </summary>
+            <param name="novoAtendimento">Objeto com as novas informações</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.AtendimentosController.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Atendimento)">
+            <summary>
+            Atualiza um atendimento existente
+            </summary>
+            <param name="idAtendimento">ID do atendimento que será atualizado</param>
+            <param name="atendimentoAtualizado">Objeto com as novas informações</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.AtendimentosController.Deletar(System.Int32)">
+            <summary>
+            Deleta um atendimento existente
+            </summary>
+            <param name="idAtendimento">ID do atendimento que será deletado</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.AtendimentosController.AlterarStatus(senai_lovePets_webApi.Domains.Atendimento)">
+            <summary>
+            Altera o status de um atendimento
+            </summary>
+            <param name="atendimento">Objeto com o atendimento que será alterado e a nova situação</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="T:senai_lovePets_webApi.Controllers.ClinicasController">
+            Define que o  arquivo será enviado em JSON
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.ClinicasController.ListarTodos">
+            <summary>
+            Lsita todas as Clinicas
+            </summary>
+            <returns>Uma lista com todas as Clinicas e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.ClinicasController.BuscarPorId(System.Int32)">
+            <summary>
+            Busca uma clinica atraves de seu ID
+            </summary>
+            <param name="idClinica">ID da clinica que será buscada </param>
+            <returns>Uma clinica encontrada e um status code 200</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.ClinicasController.Cadastrar(senai_lovePets_webApi.Domains.Clinica)">
+            <summary>
+            Cadastra uma nova clinica
+            </summary>
+            <param name="novaClinica">Objeto com as novas informações</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.ClinicasController.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Clinica)">
+            <summary>
+            Atualiza uma clinica existente
+            </summary>
+            <param name="idClinica">ID da clinica que sera atualizada</param>
+            <param name="clinicaAtualizada">Objeto com as novas informações</param>
+            <returns>Um status code 204 - no content</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.ClinicasController.Deletar(System.Int32)">
+            <summary>
+            Deleta uma clinica existente
+            </summary>
+            <param name="idClinica">ID da clinica que sera deletada</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.DonosController.List">
+            <summary>
+            Lista todos os donos cadastrados no banco
+            </summary>
+            <returns>Uma lista de donos e um status code - 200 ok</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.DonosController.BuscarPorId(System.Int32)">
+            <summary>
+            busca um dono através do seu id
+            </summary>
+            <param name="idDono">Id do Dono que sera buscado</param>
+            <returns>O Dono buscado</returns> 
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.DonosController.Cadastrar(senai_lovePets_webApi.Domains.Dono)">
+            <summary>
+            Cadastra um novo dono no banco
+            </summary>
+            <param name="novoDono">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.DonosController.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Dono)">
+            <summary>
+            Atualiza um dono ja cadastrado no banco
+            </summary>
+            <param name="idDono">ID do dono que sera atualizado</param>
+            <param name="donoAtualizado">Objeto com as novas informações</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.DonosController.Deletar(System.Int32)">
+            <summary>
+            Deleta um dono
+            </summary>
+            <param name="idDono">id do dono que sera deletado</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.UsuariosController.ListarTodos">
+            <summary>
+            Lista todos os usuarios registrados no Banco
+            </summary>
+            <returns>Uma lista de usuarios</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.UsuariosController.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um atendimento através do seu ID
+            </summary>
+            <param name="idUsuario">ID do atendimento que será buscado</param>
+            <returns>Um atendimento encontrado</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.UsuariosController.Cadastrar(senai_lovePets_webApi.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuario
+            </summary>
+            <param name="novoUsuario">Um objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.UsuariosController.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Usuario)">
+            <summary>
+            Atualiza um usuario existente
+            </summary>
+            <param name="idUsuario">ID do Usuario que sera atualizado</param>
+            <param name="usuarioAtualizado">Objeto com as novas informações</param>
+            <returns></returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.UsuariosController.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuario existente
+            </summary>
+            <param name="idUsuario">id do Usuario que sera deletado</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IAtendimentoRepository.ListarTodos">
+            <summary>
+            Lista todos os atendimentos
+            </summary>
+            <returns>Uma lista de atendimentos</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IAtendimentoRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um atendimento através do seu ID
+            </summary>
+            <param name="idAtendimento">ID do atendimento que será buscado</param>
+            <returns>Um atendimento encontrado</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IAtendimentoRepository.Cadastrar(senai_lovePets_webApi.Domains.Atendimento)">
+            <summary>
+            Cadastra um novo atendimento
+            </summary>
+            <param name="novoAtendimento">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IAtendimentoRepository.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Atendimento)">
+            <summary>
+            Atualiza um atendimento existente
+            </summary>
+            <param name="idAtendimento">ID do atendimento que será atualizado</param>
+            <param name="atendimentoAtualizado">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IAtendimentoRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um atendimento existente
+            </summary>
+            <param name="idAtendimento">ID do atendimento que será deletado</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IAtendimentoRepository.ListarMeus(System.Int32)">
+            <summary>
+            Lista todos os atendimentos de um usuário específico
+            </summary>
+            <param name="idUsuario">ID do usuário que deseja visualizar seus atendimentos</param>
+            <returns>Uma lista de atendimentos</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IAtendimentoRepository.AlterarStatus(System.Int32,System.Int32)">
+            <summary>
+            Altera o status de um atendimento
+            </summary>
+            <param name="idAtendimento">ID do atendimento que será alterado</param>
+            <param name="idNovaSituacao">ID da nova situação</param>
+        </member>
+        <member name="T:senai_lovePets_webApi.Interfaces.IClinicaRepository">
+            <summary>
+            Interface que refgerencia as clinicas
+            </summary>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IClinicaRepository.ListarTodos">
+            <summary>
+            Lista todas as clinicas
+            </summary>
+            <returns>Uma Lista com todas as clinicas</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IClinicaRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca uma clinica por ID
+            </summary>
+            <param name="idClinica">ID da clinica que sera buscada</param>
+            <returns></returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IClinicaRepository.Cadastrar(senai_lovePets_webApi.Domains.Clinica)">
+            <summary>
+            Cadastra uma nova clinica
+            </summary>
+            <param name="novaClinica">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IClinicaRepository.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Clinica)">
+            <summary>
+            Atualiza uma clinica existente
+            </summary>
+            <param name="idClinica">ID da clinica que sera atualizada</param>
+            <param name="clinicaAtualizada">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IClinicaRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta uma clinica cadastrada no Banco
+            </summary>
+            <param name="idClinica">ID da Clinica que sera deletada</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IDonoRepository.List">
+            <summary>
+            Lista todos os donos cadastrados no banco
+            </summary>
+            <returns>Uma lista de donos</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IDonoRepository.BuscarPorId(System.Int32)">
+            <summary>
+            busca um dono através do seu id
+            </summary>
+            <param name="idDono">Id do Dono que sera buscado</param>
+            <returns>O Dono buscado</returns> 
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IDonoRepository.Cadastrar(senai_lovePets_webApi.Domains.Dono)">
+            <summary>
+            Cadastra um novo dono no banco
+            </summary>
+            <param name="donoCadastrado">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IDonoRepository.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Dono)">
+            <summary>
+            Atualiza um dono ja cadastrado no banco
+            </summary>
+            <param name="idDono">ID do dono que sera atualizado</param>
+            <param name="donoAtualizado">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IDonoRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um dono
+            </summary>
+            <param name="idDono">id do dono que sera deletado</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IUsuarioRepository.BuscarPorEmailSenha(System.String,System.String)">
+            <summary>
+            Busca um usuário existente
+            </summary>
+            <param name="email">O e-mail que o usuário digitou</param>
+            <param name="senha">A senha que o usuário digitou</param>
+            <returns>Um usuário encontrado</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IUsuarioRepository.ListarTodos">
+            <summary>
+            Lista todos os usuarios registrados no Banco
+            </summary>
+            <returns>Uma lista de usuarios</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um atendimento através do seu ID
+            </summary>
+            <param name="idUsuario">ID do atendimento que será buscado</param>
+            <returns>Um atendimento encontrado</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IUsuarioRepository.Cadastrar(senai_lovePets_webApi.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuario
+            </summary>
+            <param name="novoUsuario">Um objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuario existente
+            </summary>
+            <param name="idUsuario">id do Usuario que sera deletado</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Interfaces.IUsuarioRepository.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Usuario)">
+            <summary>
+            Atualiza um usuario existente
+            </summary>
+            <param name="idUsuario">ID do Usuario que sera atualizado</param>
+            <param name="usuarioAtualizado">Objeto com as novas informações</param>
+        </member>
+        <member name="F:senai_lovePets_webApi.Repositories.AtendimentoRepository.ctx">
+            <summary>
+            Instancia o objeto ctx com a classe lovePetsContext
+            </summary>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.AtendimentoRepository.AlterarStatus(System.Int32,System.Int32)">
+            <summary>
+            Altera o status de um atendimento
+            </summary>
+            <param name="idAtendimento">ID do atendimento que será alterado</param>
+            <param name="idNovaSituacao">ID da nova situação</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.AtendimentoRepository.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Atendimento)">
+            <summary>
+            Atualiza um atendimento existente
+            </summary>
+            <param name="idAtendimento">ID do atendimento que será atualizado</param>
+            <param name="atendimentoAtualizado">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.AtendimentoRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um atendimento através do seu ID
+            </summary>
+            <param name="idAtendimento">ID do atendimento que será buscado</param>
+            <returns>Um atendimento encontrado</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.AtendimentoRepository.Cadastrar(senai_lovePets_webApi.Domains.Atendimento)">
+            <summary>
+            Cadastra um novo atendimento
+            </summary>
+            <param name="novoAtendimento">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.AtendimentoRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um atendimento existente
+            </summary>
+            <param name="idAtendimento">ID do atendimento que será deletado</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.AtendimentoRepository.ListarMeus(System.Int32)">
+            <summary>
+            Lista todos os atendimentos de um usuário específico
+            </summary>
+            <param name="idUsuario">ID do usuário que deseja visualizar seus atendimentos</param>
+            <returns>Uma lista de atendimentos</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.AtendimentoRepository.ListarTodos">
+            <summary>
+            Lista todos os atendimentos
+            </summary>
+            <returns>Uma lista de atendimentos</returns>
+        </member>
+        <member name="F:senai_lovePets_webApi.Repositories.ClinicaRepository.ctx">
+            <summary>
+            Instancia o objeto ctx com a classe lovePetsContext
+            </summary>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.ClinicaRepository.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Clinica)">
+            <summary>
+            Atualiza uma clinica já existente
+            </summary>
+            <param name="idClinica">ID da clinica que será atualizada</param>
+            <param name="clinicaAtualizada">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.ClinicaRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca uma clinica através de seu ID
+            </summary>
+            <param name="idClinica">ID da clinica que sera buscada</param>
+            <returns>Uma clinica encontrada</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.ClinicaRepository.Cadastrar(senai_lovePets_webApi.Domains.Clinica)">
+            <summary>
+            Cadastra uma nova clinica
+            </summary>
+            <param name="novaClinica">Onjeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.ClinicaRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta uma clinica
+            </summary>
+            <param name="idClinica">ID da clinica que sera deletada</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.ClinicaRepository.ListarTodos">
+            <summary>
+            Lista todas as clinicas
+            </summary>
+            <returns>Retorna uma lista com todas as clinicas cadastradas no banco</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.UsuarioRepository.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Usuario)">
+            <summary>
+            Atualiza um usuario existente
+            </summary>
+            <param name="idUsuario">ID do Usuario que sera atualizado</param>
+            <param name="usuarioAtualizado">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.UsuarioRepository.BuscarPorEmailSenha(System.String,System.String)">
+            <summary>
+            Busca um usuário existente
+            </summary>
+            <param name="email">O e-mail que o usuário digitou</param>
+            <param name="senha">A senha que o usuário digitou</param>
+            <returns>Um usuário encontrado</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.UsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um atendimento através do seu ID
+            </summary>
+            <param name="idUsuario">ID do atendimento que será buscado</param>
+            <returns>Um atendimento encontrado</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.UsuarioRepository.Cadastrar(senai_lovePets_webApi.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuario
+            </summary>
+            <param name="novoUsuario">Um objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.UsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuario existente
+            </summary>
+            <param name="idUsuario">id do Usuario que sera deletado</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.UsuarioRepository.ListarTodos">
+            <summary>
+            Lista todos os usuarios registrados no Banco
+            </summary>
+            <returns>Uma lista de usuarios</returns>
+        </member>
+    </members>
+</doc>

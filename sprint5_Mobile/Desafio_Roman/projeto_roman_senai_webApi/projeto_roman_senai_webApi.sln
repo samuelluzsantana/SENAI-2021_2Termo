@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projeto_roman_senai_webApi", "projeto_roman_senai_webApi\projeto_roman_senai_webApi.csproj", "{2C2079EC-2B6B-4549-9FD4-D91A2E9CABF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C2079EC-2B6B-4549-9FD4-D91A2E9CABF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2079EC-2B6B-4549-9FD4-D91A2E9CABF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C2079EC-2B6B-4549-9FD4-D91A2E9CABF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C2079EC-2B6B-4549-9FD4-D91A2E9CABF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D7A8326-51B7-41B3-827C-63C0EEDA59A6}
+	EndGlobalSection
+EndGlobal

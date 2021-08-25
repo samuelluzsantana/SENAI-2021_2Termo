@@ -1,0 +1,299 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+header{
+    height: 130px;
+    width: 100%;
+    background-color: #2E4057;
+
+    display: flex;
+    align-items: center;
+    color: #A285DE;
+}
+
+.hamburger i{
+    color: #A285DE;
+}
+
+
+.center-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 87%;
+}
+
+.header-topo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger{
+    font-size: 45px;
+    color: #fff;
+    padding-left: 1em;
+}
+
+.logo{
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icone, .letra{
+    height: 4em;
+}
+
+.center-main{
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.central{
+    width: 38vw;
+}
+
+.meus-desejos{
+
+    width: 100%;
+    height: 100px;
+
+    background-color: #A285DE;
+    border-radius: 25px;
+    margin-top: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.meus-desejos p{
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    letter-spacing: -1px;
+}
+
+.azul-imputs{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 11em;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #2E4057;
+    padding: 11px 29px;
+}
+
+
+h2{
+    font-family: 'DM Sans',"Lemon/Milk",sans-serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+
+}
+
+.inputs p{
+    font-family: 'DM Sans',"Lemon/Milk",sans-serif;
+    color: #fff;
+    font-weight: 600;
+}
+
+.inputt{
+    margin-top: 6px;
+    padding-left: 15px;
+
+    outline: none;
+    border-radius: 8px;
+    border: none;
+
+    height: 39px;
+    width: 20em;
+
+    background-color: #fff !important;
+    
+}
+
+.inputs-bottom{
+    display: flex;
+    width: 23em;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.descricao input{
+    width: 12em;
+}
+
+
+.data input{
+    width: 7em;
+}
+
+.inputs-bottom img{
+    margin-top: 28px;
+    height: 39px;
+}
+
+.inputs-bottom img{
+    cursor: pointer;
+}
+
+
+.desejo{
+
+    margin-bottom: 2em;
+    width: 100%;
+    height: 9em;
+    background-color: #F3F3F3;
+    border-radius: 15px;
+
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.254);
+}
+
+
+.descricao2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 22px 29px;
+}
+
+
+.descricao2 h3{
+
+    font-family: "Lemon/Milk";
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+
+}
+
+.descricao2 p{  
+    font-family: 'DM Sans',"Lemon/Milk",sans-serif;
+    text-transform: lowercase;
+    color: #A285DE;
+    font-weight: 900;
+    font-size: 25px;
+    padding-bottom: 3px;
+    margin-right: 7px;
+}
+
+
+.descricao2 img{
+    width: 37px;
+    padding-right: 4px;
+}
+
+.descricao2 img:hover{
+    cursor: pointer;
+}
+
+
+.other{
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 29px;
+}
+
+.other h3{
+    font-family: 'DM Sans',"Lemon/Milk",sans-serif;
+    color: black;
+    font-size: 29px;
+    font-weight: 900;
+    border-bottom: 3px solid black;
+}
+
+.other p{
+    font-family: 'DM Sans',"Lemon/Milk",sans-serif;
+    font-size: 23px;
+}
+
+.other input{
+    border: none;
+    font-family: 'DM Sans',"Lemon/Milk",sans-serif;
+    color: #fff;
+    background-color: #A285DE;
+    height: 49px;
+    width: 5em;
+    border-radius: 15px;
+    outline: none;
+    margin-top: 6px
+}
+
+.other input:hover {cursor:pointer;}
+
+
+@media screen and (max-width:720px ){
+
+
+
+    .central{
+        min-width: 450px;
+    }
+
+    .meus-desejos p{
+        color: rgb(255, 255, 255);
+        font-size: 2em;
+       
+    }
+
+        
+    .inputt{
+        margin-top: 11px;
+        padding-left: 15px;
+
+        outline: none;
+        border-radius: 8px;
+        border: none;
+
+        height: 39px;
+        width: 17.3em;
+
+        background-color: #fff !important;
+        
+    }
+
+    .inputs p{
+        font-size: 18px;
+    }
+
+    .inputs-bottom{
+        width: 20em;
+    }
+
+  
+
+    .descricao input{
+        width: 11em;
+    }
+
+
+    .data input{
+        width: 6em;
+    }
+
+    .inputs-bottom img{
+        margin-top: 28px;
+        height: 39px;
+    }
+
+
+}
+
